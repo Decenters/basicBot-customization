@@ -55,13 +55,13 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "BotDJ",
         language: "english",
-        startupCap: 1, // 1-200
-        startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
+        startupCap: 20, // 1-200
+        startupVolume: 70, // 0-100
+        startupEmoji: true, // true or false
         cmdDeletion: true,
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/Decenters/basicBot/master/lang/en.json",
         maximumAfk: 120,
         afkRemoval: true,
         maximumDc: 60,
@@ -72,16 +72,17 @@
         maximumLocktime: 10,
         cycleGuard: true,
         maximumCycletime: 10,
-        voteSkip: false,
+        voteSkip: true,
         voteSkipLimit: 10,
         timeGuard: true,
-        maximumSongLength: 10,
+        maximumSongLength: 6,
         autodisable: true,
         commandCooldown: 30,
         usercommandsEnabled: true,
         lockskipPosition: 3,
         lockskipReasons: [
             ["theme", "This song does not fit the room theme. "],
+            ["sucks", "This song SUCKS :trollface: "]
             ["op", "This song is on the OP list. "],
             ["history", "This song is in the history. "],
             ["mix", "You played a mix, which is against the rules. "],
@@ -91,16 +92,16 @@
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: false,
-        motdInterval: 5,
-        motd: "Temporary Message of the Day",
+        motdEnabled: true,
+        motdInterval: 10,
+        motd: "Thanks for joining, and have a wonderful day!",
         filterChat: true,
         etaRestriction: false,
         welcome: true,
-        opLink: null,
-        rulesLink: null,
-        themeLink: null,
-        fbLink: null,
+        opLink: "https://rawgit.com/Decenters/basicBot-customization/master/blacklists/ExampleOPlist.json",
+        rulesLink: "No songs longer than 6 minutes and no innapropriate songs :)",
+        themeLink: "http://www.edmsauce.com/",
+        fbLink: "lol, you still use facebook!",
         youtubeLink: null,
         website: null,
         intervalMessages: [],
@@ -108,12 +109,12 @@
         songstats: true,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/" + fork + "/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-            OP: "https://rawgit.com/" + fork + "/basicBot-customization/master/blacklists/ExampleOPlist.json"
+            NSFW: "https://rawgit.com/Decenters/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
+            OP: "https://rawgit.com/Decenters/basicBot-customization/master/blacklists/ExampleOPlist.json"
         }
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Yemasthui/basicBot/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/Decenters/basicBot/master/basicBot.js", extend);
 
 }).call(this);
