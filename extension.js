@@ -94,7 +94,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: true,
         motdInterval: 10,
-        motd: "Thanks for joining, and have a wonderful day!",
+        motd: "!gif boobs",
         filterChat: true,
         etaRestriction: false,
         welcome: true,
