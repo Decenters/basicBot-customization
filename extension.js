@@ -93,7 +93,7 @@
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
         motdEnabled: true,
-        motdInterval: 3,
+        motdInterval: 1,
         motd: "!gif boobs",
         filterChat: true,
         etaRestriction: false,
