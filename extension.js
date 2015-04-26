@@ -110,8 +110,8 @@
         songstats: false,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/Decenters/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-            OP: "https://rawgit.com/Decenters/basicBot-customization/master/blacklists/ExampleOPlist.json"
+            NSFW: "http://git.io/vfy42",
+            OP: "http://git.io/vfy42"
         }
     }));
 
