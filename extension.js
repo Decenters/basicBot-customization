@@ -102,6 +102,7 @@
         rulesLink: "No songs longer than 6 minutes and no innapropriate songs :)",
         themeLink: "http://www.edmsauce.com/",
         fbLink: "lol, you still use facebook!",
+        twitLink: "We don't have one yet...",
         youtubeLink: null,
         website: null,
         intervalMessages: [],
